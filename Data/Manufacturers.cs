@@ -1,0 +1,24 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace CRUD6.Data
+{
+    public class Manufacturers
+    {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+
+        public int MID { get; set; }
+        
+        [Display(Name = "Manufactures Name")]
+
+        public string MName { get; set; }
+
+        [Display(Name = "MHead")]
+        public string MHead { get; set; }
+    }
+}
